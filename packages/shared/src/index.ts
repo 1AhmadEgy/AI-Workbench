@@ -1,0 +1,2 @@
+export type AgentPhase="DISCOVER"|"ANALYZE"|"PLAN"|"IMPLEMENT"|"VERIFY"|"REVIEW"|"DOCUMENT"|"REPORT";
+export interface ProjectState{repository:string;branch:string;baseBranch:string;task:string;status:"idle"|"running"|"blocked"|"completed"|"failed";currentPhase:AgentPhase;modifiedFiles:string[];nextStep:string;}

@@ -1,0 +1,1 @@
+import Fastify from "fastify"; const app=Fastify({logger:true}); app.get("/health",async()=>({ok:true,service:"ai-workbench-api",version:"0.1.0"})); const port=Number(process.env.PORT??8787); app.listen({host:"0.0.0.0",port}).catch(error=>{app.log.error(error);process.exit(1)});

@@ -1,0 +1,1 @@
+{"name":"ai-workbench","private":true,"version":"0.1.0","packageManager":"pnpm@10.15.0","engines":{"node":">=22"},"scripts":{"dev":"pnpm --parallel --filter @ai-workbench/web --filter @ai-workbench/api dev","build":"pnpm -r build","typecheck":"pnpm -r typecheck","test":"pnpm -r test","lint":"pnpm -r lint"}}
